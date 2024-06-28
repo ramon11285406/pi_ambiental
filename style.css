@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: green;
+}
+.ecoguardians {
+    margin-left: 90px;
+}
+.login {
+    margin: 50px;
+}
+.menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
