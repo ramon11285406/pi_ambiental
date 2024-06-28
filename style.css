@@ -1,17 +1,50 @@
+@media (max-width: 1024px) {
+    .container .login {
+        display: none;
+    }
+}
 .container {
     width: 100%;
     display: flex;
     align-items: center;
+    margin: auto 0;
     background-color: green;
 }
 .ecoguardians {
-    margin-left: 90px;
+    font-size: 3rem;
+    margin-left: 30px;
 }
 .login {
-    margin: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: -60%;
+    font-size: 2rem;
 }
 .menu {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 30px;
+    width: 4rem;
+    height: 4rem;
+
+}
+.black {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin: auto 0;
+}
+.p1 {
+    color: white;
+    font-size: 4rem;
+}
+.ong{
+    display: inline;
+    margin: 30px 50px;
+    width: 250px;
+    height: 250px;
+}
+.amarelo {
+    background-color: yellow
 }
