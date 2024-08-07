@@ -3,13 +3,17 @@
         display: none;
     }
 }
-nav{
-    background-color: green;
-    color: green;
-}  
-.carousel img {
+.container-fluid{
+    background-color: #167114
+}
+.navbar-brand {
+    color: #FFFFFF
+}
+.btn {
+    color: #FFFFFF
+}
 
-    height: 300px;
+.imglogo{
 
 }
 
