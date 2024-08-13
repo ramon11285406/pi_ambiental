@@ -3,13 +3,20 @@
         display: none;
     }
 }
-.container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: auto 0;
-    background-color: green;
+.container-fluid{
+    background-color: #167114
 }
+.navbar-brand {
+    color: #FFFFFF
+}
+.btn {
+    color: #FFFFFF
+}
+
+.imglogo{
+
+}
+
 .ecoguardians {
     font-size: 3rem;
     margin-left: 30px;
