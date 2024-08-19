@@ -13,25 +13,10 @@
     color: #FFFFFF
 }
 
-.imglogo{
-    html, body 
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden; /* Opcional: Evita barras de rolagem */
-    
-    
-    .full-page-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw; /* Largura da viewport */
-        height: 100vh; /* Altura da viewport */
-        object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
-    
-    
-    
-
+.imglogo {
+    width: 100vw; /* Largura da viewport */
+    height: 60vh; /* Altura da viewport */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
 }
 
 .ecoguardians {
