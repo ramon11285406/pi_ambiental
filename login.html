@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet"/>
+    <link href="/css/reset.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/login.css" rel="stylesheet"/>
     <title>pi_ambiental</title>
 </head>
 <body>
-    <img src="assets/imagens/banner_login.png" alt="arara sobrevoando a mata">
-    <div class="login-box">
-        <h2>Login</h2>
-        <form action="/login" method="post">
-            <input type="text" placeholder="usuario">
-            
-        </form>
-           
-            <input type="password" placeholder="senha" required>
-    
-           <h2>
-            <input type="submit" value="Entrar">
-
-           </h2> 
-      <p><a href="/forgot-login">Esqueceu seu login?</a></p>
-      <p><a href="/forgot-password">Esqueceu sua senha?</a></p>
-      <p><a href="/help">ajuda</a></p>
-      <p><a href="/new count">cadastrar novo usuario</a></p>
-    </div>       
+    <div class="login-container">
+        <img src="assets/imagens/banner_login.png" alt="arara sobrevoando a mata" class="banner-image">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+            <p><a href="/forgot-login">Esqueceu seu login?</a></p>
+            <p><a href="/forgot-password">Esqueceu sua senha?</a></p>
+            <p><a href="/help">Ajuda</a></p>
+            <p><a href="/new-count">Cadastrar novo usuário</a></p>
+        </div>
+    </div>
 </body>
 </html>
