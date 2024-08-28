@@ -1,59 +1,60 @@
-@media (max-width: 1024px) {
-    .container .login {
-        display: none;
-    }
-}
-.container-fluid{
-    background-color: #167114
-}
-.navbar-brand {
-    color: #ffffff
-}
-.btn {
-    color: #FFFFFF
+/* Reseta margens e preenchimentos para garantir que não há overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Desabilita rolagem horizontal */
+    overflow-y: auto;   /* Habilita rolagem vertical se necessário */
 }
 
+/* Garante que o container da navbar ocupe toda a largura da viewport */
+.container-fluid {
+    width: 100vw;
+    overflow-x: hidden; /* Garante que o conteúdo não cause rolagem horizontal */
+}
+
+/* Ajusta o wrapper do conteúdo para não forçar a rolagem horizontal */
+.content-wrapper {
+    width: 100%; /* Garante que o wrapper ocupe 100% da largura da viewport */
+    overflow: hidden; /* Garante que não haja rolagem horizontal dentro do wrapper */
+}
+
+/* Ajusta o banner para se adaptar à largura da viewport */
 .imglogo {
-    width: 100vw; /* Largura da viewport */
-    height: 60vh; /* Altura da viewport */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorção */
+    width: 100%; /* Garante que a imagem ocupe 100% da largura da viewport */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.ecoguardians {
-    font-size: 3rem;
-    margin-left: 30px;
+/* Ajusta o mapa para se adaptar à largura da viewport */
+#map {
+    height: 400px; /* Defina a altura desejada do mapa */
+    width: 100%;   /* Garante que o mapa ocupe 100% da largura da viewport */
+    margin: 0;     /* Remove qualquer margem ao redor do mapa */
+    border: none;  /* Remove qualquer borda ao redor do mapa */
+    box-shadow: none; /* Remove qualquer sombra que possa criar uma borda visual */
 }
-.login {
-    display: block;
-    margin-left: auto;
-    margin-right: -60%;
-    font-size: 2rem;
-}
-.menu {
-    display: block;
-    margin-left: auto;
-    margin-right: 30px;
-    width: 4rem;
-    height: 4rem;
 
+/* Ajusta o contêiner do mapa para garantir que não haja margem ou padding extra */
+.map-container {
+    padding: 0; /* Remove o padding do contêiner do mapa */
+    margin: 0;  /* Remove a margem do contêiner do mapa */
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura da viewport */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total do elemento */
 }
+
+/* Ajusta a caixa preta para se adaptar à largura da viewport */
 .black {
-    display: inline-block;
-    text-align: center;
     background-color: black;
-    width: 100%;
-    margin: auto 0;
+    width: 100%; /* Garante que a caixa preta ocupe 100% da largura da viewport */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding e bordas na largura total do elemento */
 }
-.p1 {
-    color: white;
-    font-size: 4rem;
+
+/* Ajusta as imagens dentro da caixa preta para não exceder a largura da viewport */
+.ong {
+    display: inline-block; /* Corrige o layout das imagens */
+    margin: 30px 10px; /* Ajusta a margem para evitar overflow */
+    width: auto; /* Permite que a largura seja ajustada automaticamente */
+    max-width: 250px; /* Define um limite máximo de largura */
+    height: auto; /* Mantém a proporção da imagem */
 }
-.ong{
-    display: inline;
-    margin: 30px 50px;
-    width: 250px;
-    height: 250px;
-}
-.amarelo {
-    background-color: yellow
-}
+
