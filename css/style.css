@@ -20,8 +20,9 @@ body, html {
 
 /* Ajusta o banner para se adaptar à largura da viewport */
 .imglogo {
-    width: 100%; /* Garante que a imagem ocupe 100% da largura da viewport */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100vw; /* Garante que a imagem ocupe 100% da largura da viewport */
+    max-height: 60vh; /* Mantém a proporção da imagem */
+    object-fit: cover;
 }
 
 /* Ajusta o mapa para se adaptar à largura da viewport */
@@ -29,7 +30,7 @@ body, html {
     height: 400px; /* Defina a altura desejada do mapa */
     width: 100%;   /* Garante que o mapa ocupe 100% da largura da viewport */
     margin: 0;     /* Remove qualquer margem ao redor do mapa */
-    border: none;  /* Remove qualquer borda ao redor do mapa */
+    border: 15px solid #f8f6f6;  /* Remove qualquer borda ao redor do mapa */
     box-shadow: none; /* Remove qualquer sombra que possa criar uma borda visual */
 }
 
@@ -65,4 +66,30 @@ body, html {
     font-size: 1.5em; /* Ajusta o tamanho da fonte conforme necessário */
 }
 
+
+
+.navbar {
+    background-color: #006432; /* Verde para o fundo da navbar */
+    color: rgb(35, 154, 39); /* Cor do texto na navbar */
+}
+
+/* Estilo para o texto do link na barra de navegação */
+.navbar-brand, .navbar-nav .nav-link {
+    color: rgb(15, 7, 7) !important; /* Garante que o texto dos links esteja em branco */
+}
+
+/* Estilo para o texto do link quando está ativo ou em hover */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #d4e157; /* Cor do texto em hover e quando ativo (uma variante de verde mais clara) */
+}
+
+/* Estilo para o botão da navbar */
+.navbar-toggler {
+    border-color: rgb(0, 0, 0); /* Cor da borda do botão */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+}
 
