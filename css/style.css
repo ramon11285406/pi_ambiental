@@ -19,10 +19,43 @@ body, html {
 }
 
 /* Ajusta o banner para se adaptar à largura da viewport */
+.imglogo-container {
+    position: relative; /* Permite que o texto sobreponha a imagem */
+}
+
 .imglogo {
-    width: 100vw; /* Garante que a imagem ocupe 100% da largura da viewport */
+    width: 100%; /* Garante que a imagem ocupe 100% da largura da viewport */
     max-height: 60vh; /* Mantém a proporção da imagem */
     object-fit: cover;
+    opacity: 1; /* Ajuste o valor entre 0 e 1 conforme necessário */
+    filter: contrast(30%);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para que o centro do texto esteja no centro da imagem */
+    color: #000000; /* Verde escuro */
+    font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
+    font-size: 3em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Torna o texto mais grosso */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
+}
+
+/* Nova frase */
+.text-overlay-bottom {
+    position: absolute;
+    bottom: 5%; /* Ajusta a posição vertical para quase na extremidade inferior */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para que o texto esteja centralizado horizontalmente */
+    color: #000000; /* Verde escuro */
+    font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
+    font-size: 3em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Torna o texto mais grosso */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
 }
 
 /* Ajusta o mapa para se adaptar à largura da viewport */
@@ -66,8 +99,7 @@ body, html {
     font-size: 1.5em; /* Ajusta o tamanho da fonte conforme necessário */
 }
 
-
-
+/* Estilo para a navbar */
 .navbar {
     background-color: #006432; /* Verde para o fundo da navbar */
     color: rgb(35, 154, 39); /* Cor do texto na navbar */
@@ -92,4 +124,3 @@ body, html {
 .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
 }
-
