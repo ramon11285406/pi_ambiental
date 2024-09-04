@@ -1,0 +1,75 @@
+/* Reseta margens e preenchimentos para garantir que não há overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Desabilita rolagem horizontal */
+    overflow-y: auto;   /* Habilita rolagem vertical se necessário */
+}
+
+/* Garante que o container da navbar ocupe toda a largura da viewport */
+.container-fluid {
+    width: 100vw;
+    overflow-x: hidden; /* Garante que o conteúdo não cause rolagem horizontal */
+}
+
+/* Ajusta o wrapper do conteúdo para não forçar a rolagem horizontal */
+.content-wrapper {
+    width: 100%; /* Garante que o wrapper ocupe 100% da largura da viewport */
+    overflow: hidden; /* Garante que não haja rolagem horizontal dentro do wrapper */
+}
+
+/* Espaço em branco substituindo o banner e o mapa */
+.empty-space {
+    width: 100%; /* Garante que o espaço ocupe 100% da largura da viewport */
+    background-color: #ffffff; /* Define o fundo como branco */
+}
+
+/* Ajusta a caixa preta para se adaptar à largura da viewport */
+.black {
+    background-color: rgb(0, 0, 0);
+    width: 100%; /* Garante que a caixa preta ocupe 100% da largura da viewport */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding e bordas na largura total do elemento */
+}
+
+/* Ajusta as imagens dentro da caixa preta para não exceder a largura da viewport */
+.ong {
+    display: inline-block; /* Corrige o layout das imagens */
+    margin: 30px 10px; /* Ajusta a margem para evitar overflow */
+    width: auto; /* Permite que a largura seja ajustada automaticamente */
+    max-width: 250px; /* Define um limite máximo de largura */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Ajusta a frase "ENTIDADES PARCEIRAS" para aparecer em branco e manter a posição original */
+.p1 {
+    color: white; /* Define a cor do texto como branco */
+    margin: 0; /* Remove margens para melhor alinhamento */
+    font-size: 1.5em; /* Ajusta o tamanho da fonte conforme necessário */
+}
+
+/* Estilo para a navbar */
+.navbar {
+    background-color: #006432; /* Verde para o fundo da navbar */
+    color: rgb(35, 154, 39); /* Cor do texto na navbar */
+}
+
+/* Estilo para o texto do link na barra de navegação */
+.navbar-brand, .navbar-nav .nav-link {
+    color: rgb(15, 7, 7) !important; /* Garante que o texto dos links esteja em branco */
+}
+
+/* Estilo para o texto do link quando está ativo ou em hover */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #d4e157; /* Cor do texto em hover e quando ativo (uma variante de verde mais clara) */
+}
+
+/* Estilo para o botão da navbar */
+.navbar-toggler {
+    border-color: rgb(0, 0, 0); /* Cor da borda do botão */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+}
