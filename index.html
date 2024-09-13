@@ -127,7 +127,7 @@
   <!-- Script para inicializar o mapa -->
   <script>
     // Inicializa o mapa
-    var map = L.map('map').setView([-1.4384937,-48.4361116,901], 13); // Defina a latitude, longitude e o nível de zoom
+    var map = L.map('map').setView([-1.436294,-48.4901577,2681], 13); // Defina a latitude, longitude e o nível de zoom
 
     // Adiciona a camada de tile do mapa
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -135,7 +135,7 @@
     }).addTo(map);
 
     // Adiciona um marcador
-    L.marker([-1.4384937,-48.4361116,901]).addTo(map)
+    L.marker([-1.436294,-48.4901577,2681]).addTo(map)
       .bindPopup('A marker here.')
       .openPopup();
   </script>
